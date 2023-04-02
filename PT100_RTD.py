@@ -18,9 +18,9 @@ while True:
     print(f"Temperature: {tempeparture}{chr(248)}C")
     time.sleep(0.2)
   except KeyboardInterrupt:
-      print("user interrupted the programme")
-      sys.exit()
+    print("User interrupted the program.")
+    sys.exit()
   finally:
-      GPIO.cleanup()
-      spi.close()  
+    GPIO.cleanup()    
+    spi.close()
         
