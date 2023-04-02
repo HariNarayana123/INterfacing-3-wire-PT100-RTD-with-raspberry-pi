@@ -20,7 +20,6 @@ while True:
   except KeyboardInterrupt:
     print("User interrupted the program.")
     sys.exit()
-  finally:
-    GPIO.cleanup()    
-    spi.close()
+  finally:    
+    spi.deinit()
         
